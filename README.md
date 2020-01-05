@@ -301,3 +301,6 @@ function changeStop() {
 document.getElementById("stop").style.display = "none";
 </script>
 ```
+# 步驟六：製作外盒及告示牌
+運用箱子製作樹莓派、鏡頭、伺服馬達擺放位置及告示牌。
+組合後即可完成本專案。
