@@ -25,8 +25,8 @@ class Camera(BaseCamera):
 
     @staticmethod
     def frames():
-        model_path = "/home/georgelin/proj/person-detection-retail-0013.xml"
-        pbtxt_path = "/home/georgelin/proj/person-detection-retail-0013.bin"
+        model_path = path + "/person-detection-retail-0013.xml"
+        pbtxt_path = path + "/person-detection-retail-0013.bin"
         net = cv2.dnn.readNet(model_path,pbtxt_path)
         net.setPreferableTarget(cv2.dnn.DNN_TARGET_MYRIAD)
 
