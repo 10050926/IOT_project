@@ -9,7 +9,6 @@ class Camera(BaseCamera):
     P_right = 0
 
     def __init__(self):
-        #Camera.set_video_source('/home/georgelin/proj/demovideo1_Trim.mp4')
         super(Camera, self).__init__()
 
     @staticmethod
@@ -25,8 +24,9 @@ class Camera(BaseCamera):
 
     @staticmethod
     def frames():
-        model_path = "/home/georgelin/proj/person-detection-retail-0013.xml"
-        pbtxt_path = "/home/georgelin/proj/person-detection-retail-0013.bin"
+        path = os.path.abspath('..')
+        model_path = path + "/person-detection-retail-0013.xml"
+        pbtxt_path = path + "/person-detection-retail-0013.bin"
         net = cv2.dnn.readNet(model_path,pbtxt_path)
         net.setPreferableTarget(cv2.dnn.DNN_TARGET_MYRIAD)
 
