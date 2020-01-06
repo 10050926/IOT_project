@@ -1,4 +1,4 @@
-# IOT_project: 指引系統
+# IOT_project: 人流導引系統
 透過鏡頭及物件偵測模型判斷人們的主要行徑方向或排隊多寡，並透過告示牌指引人們至人數較少的方向，分散人流。使用者可透過網頁手動或自動控制告示牌。
 
 所需材料：  
@@ -9,6 +9,8 @@ Intel neural compute stick 2* 1
 杜邦線(公對母)* 1  
 紙箱  
 膠帶  
+
+DEMO: https://youtu.be/shlqNfBNos4
 
 # 步驟一：安裝openVino
 __注意不要使用python3.6__  
